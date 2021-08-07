@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -26,9 +26,7 @@ class _TicState extends State<Tic> {
   int xScore = 0;
   int gridFull = 0;
   String turn='O';
-  static var newFont = GoogleFonts.wallpoet(
-    textStyle: TextStyle(color: Colors.black,letterSpacing: 3,fontSize: 25)
-  );
+
   List<String> showcase = [
     '',
     '',
@@ -58,8 +56,8 @@ class _TicState extends State<Tic> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text('Player O', style: newFont),
-                          Text(oScore.toString(), style: newFont),
+                          Text('Player O', style: TextStyle(color: Colors.black,letterSpacing: 3,fontSize: 25)),
+                          Text(oScore.toString(), style: TextStyle(color: Colors.black,letterSpacing: 3,fontSize: 25)),
                         ],
                       ),
                     ),
@@ -68,8 +66,8 @@ class _TicState extends State<Tic> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text('Player X', style: newFont),
-                          Text(xScore.toString(), style: newFont,),
+                          Text('Player X', style: TextStyle(color: Colors.black,letterSpacing: 3,fontSize: 25)),
+                          Text(xScore.toString(), style: TextStyle(color: Colors.black,letterSpacing: 3,fontSize: 25),),
                         ],
                       ),
                     ),
@@ -108,8 +106,8 @@ class _TicState extends State<Tic> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('Turn:',style: newFont,),
-                  Text(turn.toString(),style: newFont,),
+                  Text('Turn:',style: TextStyle(color: Colors.black,letterSpacing: 3,fontSize: 25),),
+                  Text(turn.toString(),style: TextStyle(color: Colors.black,letterSpacing: 3,fontSize: 25),),
                 ],
               ),
             ),)
